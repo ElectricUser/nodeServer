@@ -4,6 +4,10 @@ import express from "express";
 import { router as authRouter } from "./src/routes/authentication.js";
 import cors from "cors";
 import { connectDB } from "./src/config/databaseConnection.js";
+import dotenv from "dotenv";
+
+// load environment variables from .env file
+dotenv.config();
 
 // intialize db connection
 connectDB();
